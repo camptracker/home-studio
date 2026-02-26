@@ -495,7 +495,191 @@ export default function LightingGuide() {
         <FilmGrain />
       </section>
 
-      {/* 5. Products */}
+      {/* 5. Recording a Focused Person */}
+      <section className="lg-section">
+        <h2>🎯 Recording a Focused Person</h2>
+        <p className="section-intro">Everything you need to nail a single-subject shot — talking head, interview, or performance.</p>
+
+        {/* Camera Settings */}
+        <div className="fp-subsection">
+          <h3>📷 Camera Settings</h3>
+          <div className="technique-columns">
+            <div className="technique-card">
+              <h3>🔍 Aperture &amp; Lens</h3>
+              <p className="tech-subtitle">Control depth of field</p>
+              <ul>
+                <li><strong>f/1.4–f/2.8</strong> — shallow DOF, blurs background, isolates subject. THE most cinematic look</li>
+                <li><strong>35mm</strong> — wider/environmental shots</li>
+                <li><strong>50mm</strong> — classic portrait, sweet spot for talking head</li>
+                <li><strong>85mm</strong> — tight/compressed look, maximum background separation</li>
+              </ul>
+            </div>
+            <div className="technique-card">
+              <h3>⚙️ Exposure Settings</h3>
+              <p className="tech-subtitle">Get the technical foundation right</p>
+              <ul>
+                <li><strong>Shutter speed</strong> — double your frame rate (24fps → 1/50, 30fps → 1/60) for natural motion blur</li>
+                <li><strong>ISO</strong> — keep as low as possible (100-800). Higher = more noise. Light well to keep ISO low</li>
+                <li><strong>Eye-level or slightly above</strong> — most flattering angle. Below = up-nose. Way above = diminishing</li>
+                <li><strong>Rule of thirds</strong> — eyes at upper third line, slight offset left or right</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* Composition */}
+        <div className="fp-subsection">
+          <h3>🖼️ Composition Tips</h3>
+          <div className="fp-composition-demo">
+            <div className="fp-thirds-grid">
+              <div className="fp-thirds-overlay">
+                <div className="fp-thirds-line fp-thirds-h1" />
+                <div className="fp-thirds-line fp-thirds-h2" />
+                <div className="fp-thirds-line fp-thirds-v1" />
+                <div className="fp-thirds-line fp-thirds-v2" />
+                <div className="fp-thirds-subject">👤</div>
+                <div className="fp-thirds-label">Rule of Thirds — subject offset, eyes at upper third</div>
+              </div>
+            </div>
+          </div>
+          <div className="fp-tip-grid">
+            <div className="fp-tip-card">
+              <strong>Headroom</strong>
+              <p>Small gap between top of head and frame edge. Too much = floating head. Too little = claustrophobic.</p>
+            </div>
+            <div className="fp-tip-card">
+              <strong>Lead room / nose room</strong>
+              <p>If subject is off-center, give more space in the direction they're looking/facing.</p>
+            </div>
+            <div className="fp-tip-card">
+              <strong>Clean background</strong>
+              <p>Remove distractions. Subject 4-6 ft from background for maximum blur/separation.</p>
+            </div>
+            <div className="fp-tip-card">
+              <strong>Eye contact</strong>
+              <p>Look at the lens, not the screen. Put a small sticker near the lens as a reminder.</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Lighting Patterns */}
+        <div className="fp-subsection">
+          <h3>💡 Lighting Patterns for a Single Subject</h3>
+          <div className="fp-lighting-patterns">
+            <div className="fp-pattern-card">
+              <div className="fp-pattern-diagram">
+                <div className="fp-face">😊</div>
+                <div className="fp-light-pos fp-light-45">☀️</div>
+                <div className="fp-triangle">▲</div>
+              </div>
+              <h4>Rembrandt</h4>
+              <p>Key light 45° to one side. Creates triangle of light on shadow-side cheek. Classic, dramatic, professional.</p>
+            </div>
+            <div className="fp-pattern-card">
+              <div className="fp-pattern-diagram">
+                <div className="fp-face">😊</div>
+                <div className="fp-light-pos fp-light-center">☀️</div>
+              </div>
+              <h4>Butterfly</h4>
+              <p>Key light directly in front, slightly above. Shadow under nose. Flattering for most faces, beauty/fashion standard.</p>
+            </div>
+            <div className="fp-pattern-card">
+              <div className="fp-pattern-diagram">
+                <div className="fp-face">😊</div>
+                <div className="fp-light-pos fp-light-30">☀️</div>
+              </div>
+              <h4>Loop</h4>
+              <p>Key light 30° to one side, above. Nose shadow loops to one side. Most universally flattering pattern.</p>
+            </div>
+          </div>
+          <div className="fp-tip-grid">
+            <div className="fp-tip-card">
+              <strong>✨ Catch lights</strong>
+              <p>Ensure light reflects in subject's eyes — makes eyes look alive and engaged.</p>
+            </div>
+            <div className="fp-tip-card">
+              <strong>💫 Hair/rim light</strong>
+              <p>Subtle backlight outlining hair/shoulders. Separates subject from background dramatically.</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Audio */}
+        <div className="fp-subsection">
+          <h3>🎙️ Audio for a Single Subject</h3>
+          <div className="technique-card">
+            <ul>
+              <li><strong>Lav mic</strong> clipped 6-8 inches below chin — consistent level regardless of head movement</li>
+              <li><strong>Shotgun mic</strong> just out of frame above, pointed at mouth. Closer = better audio</li>
+              <li><strong>Room tone</strong> — record 30 seconds of silence before starting. Essential for noise removal in post</li>
+              <li><strong>Monitor with headphones</strong> — always wear headphones to catch AC hum, traffic, etc. in real-time</li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Focus */}
+        <div className="fp-subsection">
+          <h3>🎯 Focus Tips</h3>
+          <div className="fp-tip-grid">
+            <div className="fp-tip-card">
+              <strong>Eye AF</strong>
+              <p>If your camera has Eye AF (Sony, Canon), enable it. Locks focus on subject's eye automatically.</p>
+            </div>
+            <div className="fp-tip-card">
+              <strong>Focus Peaking</strong>
+              <p>No Eye AF? Use focus peaking to nail focus on the eyes, then lock it.</p>
+            </div>
+            <div className="fp-tip-card">
+              <strong>AF-C vs AF-S</strong>
+              <p>Continuous (AF-C) for moving subjects. Single (AF-S) for stationary talking head.</p>
+            </div>
+            <div className="fp-tip-card">
+              <strong>Nearest Eye</strong>
+              <p>Always focus on the eye closest to camera. It must be tack sharp.</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Background Separation */}
+        <div className="fp-subsection">
+          <h3>🌀 Background Separation Techniques</h3>
+          <div className="technique-card">
+            <ul>
+              <li><strong>Practical lights in background</strong> (lamps, LEDs) create bokeh circles when blurred — adds visual interest</li>
+              <li><strong>Color contrast</strong> — subject lit warm/neutral, background with cool/colored light (teal, blue, purple)</li>
+              <li><strong>Depth layers</strong> — foreground slightly blurred, subject sharp, background blurred = cinematic layered look</li>
+              <li><strong>Negative fill</strong> — black card/flag on shadow side to deepen shadows and add dimension</li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Common Mistakes */}
+        <div className="fp-subsection">
+          <h3>🚫 Common Mistakes to Avoid</h3>
+          <div className="fp-mistakes-grid">
+            <div className="fp-mistake-card">❌ Overhead/ceiling lights as main source — creates raccoon eyes</div>
+            <div className="fp-mistake-card">❌ Window directly behind subject — silhouette/blown out background</div>
+            <div className="fp-mistake-card">❌ On-camera flash/ring light only — flat, deer-in-headlights look</div>
+            <div className="fp-mistake-card">❌ Mixed color temperatures — daylight + tungsten = weird color casts</div>
+            <div className="fp-mistake-card">❌ Autofocus hunting during recording — lock focus or use reliable Eye AF</div>
+            <div className="fp-mistake-card">❌ Too much headroom or cutting off top of head</div>
+          </div>
+        </div>
+
+        {/* Pro Tips */}
+        <div className="fp-subsection">
+          <h3>🎬 Pro Tips</h3>
+          <div className="fp-pro-tips">
+            <div className="fp-pro-card">🎬 Shoot <strong>24fps</strong> for cinematic, <strong>30fps</strong> for natural/vlog, <strong>60fps</strong> for slow-motion B-roll</div>
+            <div className="fp-pro-card">🎬 Record in <strong>LOG profile</strong> (S-Log3, C-Log) for maximum color grading flexibility in post</div>
+            <div className="fp-pro-card">🎬 Use a <strong>gray card</strong> or color checker at start of each session for accurate white balance</div>
+            <div className="fp-pro-card">🎬 Film in <strong>4K</strong> even if delivering 1080p — room to crop/reframe in post</div>
+            <div className="fp-pro-card">🎬 <strong>2-camera illusion</strong>: Record 4K, deliver 1080p, punch in for a "second angle" in post</div>
+          </div>
+        </div>
+      </section>
+
+      {/* 6. Products */}
       <section className="lg-section">
         <h2>🛒 Recommended Products</h2>
         <div className="product-list">

@@ -214,6 +214,121 @@
 .lg-price { color: var(--primary); font-weight: 700; font-size: 0.9rem; white-space: nowrap; }
 .lg-product-card p { color: var(--text-muted); font-size: 0.85rem; }
 
+/* Focused Person Section */
+.fp-subsection { margin-bottom: 28px; }
+.fp-subsection > h3 { font-size: 1.2rem; margin-bottom: 14px; color: var(--text); }
+
+.fp-tip-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 12px;
+}
+.fp-tip-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px;
+}
+.fp-tip-card strong { color: var(--primary); font-size: 0.95rem; display: block; margin-bottom: 4px; }
+.fp-tip-card p { color: var(--text-muted); font-size: 0.85rem; line-height: 1.5; }
+
+/* Rule of thirds diagram */
+.fp-composition-demo { margin-bottom: 16px; }
+.fp-thirds-grid {
+  background: #1a1a2e;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  max-height: 280px;
+}
+.fp-thirds-overlay { position: absolute; inset: 0; }
+.fp-thirds-line { position: absolute; background: rgba(167,139,250,0.3); }
+.fp-thirds-h1 { top: 33.3%; left: 0; right: 0; height: 1px; }
+.fp-thirds-h2 { top: 66.6%; left: 0; right: 0; height: 1px; }
+.fp-thirds-v1 { left: 33.3%; top: 0; bottom: 0; width: 1px; }
+.fp-thirds-v2 { left: 66.6%; top: 0; bottom: 0; width: 1px; }
+.fp-thirds-subject {
+  position: absolute;
+  top: 20%;
+  left: 60%;
+  font-size: 4rem;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(0 0 20px rgba(167,139,250,0.4));
+}
+.fp-thirds-label {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.5);
+  white-space: nowrap;
+}
+
+/* Lighting pattern diagrams */
+.fp-lighting-patterns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.fp-pattern-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+}
+.fp-pattern-card h4 { color: var(--primary); margin: 8px 0 6px; font-size: 1rem; }
+.fp-pattern-card p { color: var(--text-muted); font-size: 0.82rem; line-height: 1.5; }
+.fp-pattern-diagram {
+  position: relative;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fp-face { font-size: 2.5rem; }
+.fp-light-pos { position: absolute; font-size: 1.4rem; filter: drop-shadow(0 0 8px rgba(255,200,50,0.6)); }
+.fp-light-45 { top: 5px; right: 15%; }
+.fp-light-center { top: 0; left: 50%; transform: translateX(-50%); }
+.fp-light-30 { top: 5px; right: 22%; }
+.fp-triangle { position: absolute; bottom: 20px; left: 38%; font-size: 0.6rem; color: rgba(255,200,50,0.5); }
+
+/* Mistakes grid */
+.fp-mistakes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 10px;
+}
+.fp-mistake-card {
+  background: var(--surface);
+  border: 1px solid rgba(239,68,68,0.2);
+  border-radius: 10px;
+  padding: 14px 16px;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* Pro tips */
+.fp-pro-tips {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.fp-pro-card {
+  background: var(--surface);
+  border: 1px solid rgba(167,139,250,0.2);
+  border-radius: 10px;
+  padding: 14px 16px;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
 @media (max-width: 640px) {
   .lg-hero h1 { font-size: 1.6rem; }
   .color-grid { grid-template-columns: 1fr; }

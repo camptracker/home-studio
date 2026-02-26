@@ -1,3 +1,5 @@
+import { useState } from 'react'
+import LightingGuide from './LightingGuide'
 import './App.css'
 
 interface Product {
@@ -175,8 +177,14 @@ function ProductCard({ product }: { product: Product }) {
 }
 
 function App() {
+  const [tab, setTab] = useState<'equipment' | 'lighting'>('equipment')
   return (
     <div className="app">
+      <nav className="site-nav">
+        <button className={`nav-tab${tab === 'equipment' ? ' active' : ''}`} onClick={() => setTab('equipment')}>⚡ Equipment</button>
+        <button className={`nav-tab${tab === 'lighting' ? ' active' : ''}`} onClick={() => setTab('lighting')}>💡 Lighting Guide</button>
+      </nav>
+      {tab === 'lighting' ? <LightingGuide /> : <>
       <header className="hero">
         <h1>Chloe Shih's Studio Setup</h1>
         <p className="subtitle">The exact gear behind a 400K+ subscriber YouTube channel</p>
@@ -232,6 +240,7 @@ function App() {
       <footer>
         <p>Gear list sourced from <a href="https://www.amazon.com/shop/chloeshih" target="_blank" rel="noopener noreferrer">Chloe Shih's Amazon Storefront</a>. Prices approximate and may vary. Not affiliated.</p>
       </footer>
+      </>}
     </div>
   )
 }
